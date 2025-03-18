@@ -2,7 +2,7 @@
 export async function GET() {
     try {
       // Fetch data from your backend
-      const response = await fetch('http://localhost:5000/api/sessions', {
+      const response = await fetch('https://milk-session-backend-production.up.railway.app/api/sessions', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ export async function GET() {
       const sessionData = await request.json();
   
       // Send the data to your backend
-      const response = await fetch('http://localhost:5000/api/sessions', {
+      const response = await fetch('https://milk-session-backend-production.up.railway.app/api/sessions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
